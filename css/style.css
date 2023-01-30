@@ -146,3 +146,64 @@ div.contact button {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+
+section.offer {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+section.offer h2 {
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	font-weight: 500;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+section.offer article {
+	margin-bottom: 5rem;
+}
+
+section.offer article span {
+	padding: 1rem 1rem;
+	font-size: 2rem;
+	font-weight: 700;
+	border-radius: 1rem;
+	color: var(--gray-7);
+}
+
+span.blue-bgc {
+	background-color: var(--blue);
+}
+
+span.green-bgc {
+	background-color: var(--green);
+}
+
+span.red-bgc {
+	background-color: var(--red);
+}
+
+section.offer article h3 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	color: var(--gray-1);
+}
+
+section.offer article p {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5em;
+	color: var(--gray-2);
+}
+
+section.offer article button {
+	border: none;
+	background-color: var(--gray-5);
+	border-radius: 0.75rem;
+	color: var(--gray-3);
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	padding: 0.5rem 0.75rem;
+}
