@@ -18,3 +18,34 @@ font-family: 'Heebo', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
  */
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+}
+
+img {
+	display: block;
+	max-width: 100vw;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0.75rem;
+}
+
+h1 {
+	font-family: "Heebo", sans-serif;
+	font-weight: 800;
+	font-size: clamp(1.5rem, 6vw, 2.25rem);
+	margin: 0;
+}
+
+button.hamburger {
+	display: block;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
