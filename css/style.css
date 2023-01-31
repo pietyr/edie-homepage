@@ -324,3 +324,44 @@ section.team img {
 section.team img.first-photo {
 	max-width: 90%;
 }
+
+section.opinions {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	margin-top: 5rem;
+}
+
+section.opinions blockquote {
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	margin: 0;
+	color: var(--gray-1);
+}
+
+section.opinions div.author {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	margin-top: 2rem;
+}
+div.author img {
+	width: 5.5rem;
+	border-radius: 0.5rem;
+}
+
+div.author div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.75rem;
+}
+div.author span:first-child {
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	color: var(--gray-1);
+}
+div.author span:last-child {
+	font-size: 1.125rem;
+	line-height: 1.5em;
+	color: var(--gray-3);
+}
