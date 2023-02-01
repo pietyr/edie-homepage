@@ -27,6 +27,9 @@ body {
 
 header {
 	display: flex;
+	position: sticky;
+	top: 0rem;
+	background-color: var(--gray-7);
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0.75rem;
@@ -51,10 +54,11 @@ header nav ul {
 	padding-left: 0;
 	margin: 0;
 	gap: 2rem;
+	color: var(--gray-1);
 }
 
 header li a {
-	color: var(--gray-1);
+	color: inherit;
 	font-size: 1.5rem;
 	line-height: 1.5em;
 	text-decoration: none;
@@ -67,9 +71,23 @@ button.hamburger {
 	cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 	header nav ul {
 		display: none;
+		flex-direction: column;
+	}
+
+	header nav ul.mobile-opened {
+		display: flex;
+		position: fixed;
+		align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		top: 3.75rem;
+		left: 0rem;
+		right: 0rem;
+		background-color: var(--gray-1);
+		color: var(--gray-6);
 	}
 
 	button.hamburger {
