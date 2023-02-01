@@ -214,23 +214,41 @@ section.contact button {
 section.offer {
 	padding-left: 0.375rem;
 	padding-right: 0.375rem;
+	margin: 0 auto;
 }
 
 section.offer h2 {
-	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 5vw, 2.25rem);
 	line-height: 1.5em;
 	font-weight: 500;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	padding-left: 2.125rem;
-	padding-right: 2.125rem;
+	margin: 5rem 2.125rem;
+	max-width: min(350px, 70vw);
+}
+
+@media (min-width: 775px) {
+	section.offer {
+		max-width: 75vw;
+	}
+
+	div.offer-articles-wrapper {
+		display: flex;
+		justify-content: space-around;
+		gap: 2.5rem;
+	}
+	section.offer article {
+		max-width: 375px;
+	}
 }
 
 section.offer article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	margin-bottom: 5rem;
 	border-radius: 1.5rem;
 	padding: 2.75rem 2.125rem;
 	transition: 0.2s;
+	flex-basis: 30%;
 }
 
 @media (hover: hover) {
@@ -288,6 +306,7 @@ section.offer article button {
 	padding: 0.5rem 0.75rem;
 	transition: 0.2s;
 	cursor: pointer;
+	margin-top: auto;
 }
 
 section.projects {
