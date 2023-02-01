@@ -44,11 +44,37 @@ h1 {
 	margin: 0;
 }
 
+header nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	gap: 2rem;
+}
+
+header li a {
+	color: var(--gray-1);
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+
 button.hamburger {
-	display: block;
+	display: none;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	header nav ul {
+		display: none;
+	}
+
+	button.hamburger {
+		display: block;
+	}
 }
 
 section.intro {
