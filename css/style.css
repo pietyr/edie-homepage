@@ -28,11 +28,11 @@ body {
 header {
 	display: flex;
 	position: sticky;
-	top: 0rem;
+	top: -2rem;
 	background-color: var(--gray-7);
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 0.75rem;
+	padding: clamp(1rem, 3.5vw, 3rem) clamp(0.75rem, 3vw, 3.5rem) 1rem;
 }
 
 main {
@@ -72,6 +72,10 @@ button.hamburger {
 }
 
 @media (max-width: 750px) {
+	header {
+		top: 0rem;
+	}
+
 	header nav ul {
 		display: none;
 		flex-direction: column;
