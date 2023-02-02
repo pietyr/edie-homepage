@@ -311,6 +311,28 @@ section.offer article button {
 
 section.projects {
 	margin-bottom: 6rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+	div.projects-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	div.projects-wrapper article:not(:nth-child(even)) {
+		margin-top: 11rem;
+	}
+
+	div.absolute {
+		position: absolute;
+		margin-top: 1rem;
+	}
+
+	section.projects article {
+		margin-bottom: 0rem;
+	}
 }
 
 section.projects h2 {
