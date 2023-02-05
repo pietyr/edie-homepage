@@ -474,10 +474,11 @@ section.opinions {
 }
 
 section.opinions blockquote {
-	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
 	line-height: 1.5em;
 	margin: 0;
 	color: var(--gray-1);
+	max-width: 950px;
 }
 
 section.opinions div.author {
@@ -517,7 +518,18 @@ footer {
 div.footer-wrapper {
 	display: flex;
 	flex-direction: column;
+	width: max-content;
+	margin: 0 auto;
 	gap: 4rem;
+}
+
+@media (min-width: 720px) {
+	div.footer-wrapper {
+		width: unset;
+		max-width: 1124px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 div.footer-wrapper ul {
