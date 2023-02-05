@@ -149,7 +149,6 @@ div.banner-photo {
 	background-image: url("../img/heroImage.jpg");
 	margin: max(1rem, 4vw);
 	border-radius: 1rem;
-	/* aspect-ratio: 3.075; */
 	height: clamp(9rem, 30vw, 23rem);
 	background-position: center;
 	background-size: cover;
@@ -314,7 +313,7 @@ section.offer article button {
 }
 
 section.projects {
-	margin-bottom: 6rem;
+	margin-bottom: 12rem;
 
 	margin: 0 auto;
 }
@@ -364,12 +363,17 @@ section.projects > a {
 	align-items: center;
 	text-decoration: none;
 	color: var(--blue);
-	font-size: 1.125rem;
+	font-size: clamp(1.125rem, 3vw, 1.5rem);
 	line-height: 1.5em;
 	margin-left: 0.75rem;
 }
 
 @media (min-width: 555px) {
+	section.projects > a {
+		margin-top: 1rem;
+		margin-right: 0.75rem;
+		justify-content: flex-end;
+	}
 	section.projects {
 		max-width: 1124px;
 	}
@@ -400,8 +404,20 @@ section.projects > a {
 }
 
 section.team {
+	margin-top: 12rem;
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
+}
+
+@media (min-width: 800px) {
+	section.team {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div.team-text-wrapper {
+		max-width: 350px;
+	}
 }
 
 section.team span {
