@@ -108,7 +108,7 @@ section.intro div.upper-text,
 section.intro div.lower-text {
 	display: flex;
 	flex-direction: column;
-	max-width: max(850px, 65vw);
+	max-width: 850px;
 	gap: min(1rem, 0.5vw);
 	margin: 0 auto;
 	padding-left: 2.5rem;
@@ -227,6 +227,7 @@ section.offer h2 {
 	line-height: 1.5em;
 	font-weight: 500;
 	margin: 5rem 0;
+	margin-left: 2.125rem;
 	max-width: min(350px, 70vw);
 }
 
@@ -237,6 +238,9 @@ section.offer h2 {
 	}
 	section.offer article {
 		max-width: 375px;
+	}
+	section.offer h2 {
+		margin-left: 0;
 	}
 }
 
