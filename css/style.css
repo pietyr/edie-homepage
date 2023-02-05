@@ -11,6 +11,15 @@
 	--blue: #2d9cdb;
 	--green: #27ae60;
 	--red: #eb5757;
+
+	scroll-behavior: smooth;
+}
+
+:target::before {
+	content: "";
+	display: block;
+	height: 74px;
+	margin: -74px 0 0;
 }
 
 /* 
